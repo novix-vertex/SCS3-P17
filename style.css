@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color:#fff;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "img1logo img1logo list smiley"
+        "img1logo img1logo list img2"
+        "barcode location list img2"
+        "barcode medals ratings ratings"
+        "barcode qrcode ratings ratings";
+}
+
+.section1 {
+    grid-area: img1logo;
+    background-color: #0A0A0A;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.section1 .person {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    margin: auto;
+    background-color: #9E54F4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section2 {
+    grid-area: logo;
+    background-color: #171719;
+}
+
+.section3 {
+    grid-area: list;
+    background-color: #161616;
+}
+
+.section4 {
+    grid-area: smiley;
+    background: linear-gradient(to right, #A759F5, #783CCD);
+}
+
+.section5 {
+    grid-area: barcode;
+    background-color: #080808;
+}
+
+.section6 {
+    grid-area: location;
+    background-color: #171719;
+}
+
+.section7 {
+    grid-area: medals;
+    background-color: #171719;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.section7 img{
+    height:80px;
+}
+
+.section8 {
+    grid-area: qrcode;
+    background-color: #080808;
+}
+
+.section9 {
+    grid-area: img2;
+    background-color: #D6F156;
+    margin: 12px;
+    border-radius: 10px;
+}
+
+.section9 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.section10 {
+    color:#000;
+    grid-area: ratings;
+    background-color: #FEFEFE;
+}
