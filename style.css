@@ -30,18 +30,28 @@ main {
 .section1 {
     grid-area: img1logo;
     background-color: #0A0A0A;
-    margin: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .person,
+.section1 .logo {
+    object-fit: contain;
+    margin: auto;
+    padding: 20px;
     border-radius: 10px;
 }
 
 .section1 .person {
-    height: 50%;
-    width: 50%;
-    object-fit: contain;
-    margin: auto;
     background-color: #9E54F4;
-    padding: 20px;
-    border-radius: 10px;
+
+}
+
+.section1 .logo {
+    background-color: #171719;
 }
 
 .section2 {
@@ -331,12 +341,12 @@ main {
 
 .section10 .left {
     align-items: flex-start;
-    width:60%;
+    width: 60%;
 }
 
 .section10 .right {
     align-items: flex-end;
-    width:40%;
+    width: 40%;
 }
 
 .section10 .left h2 {
@@ -359,7 +369,7 @@ main {
     border-radius: 10px;
     padding-block: 5px;
     padding-inline: 10px;
-    border:none;
+    border: none;
     font-size: 12px;
 }
 
