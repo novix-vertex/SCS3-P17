@@ -16,7 +16,7 @@ main {
     height: 100%;
     width: 100%;
     background-color: #000000;
-    padding:20px;
+    padding: 20px;
     display: grid;
     gap: 10px;
     grid-template-areas:
@@ -80,6 +80,42 @@ main {
 .section4 {
     grid-area: smiley;
     background: linear-gradient(to right, #A759F5, #783CCD);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    gap:20px;
+}
+
+.section4 div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.section4 i {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.section4 h4 {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.section4 .separator {
+    width: 1px;
+    height: 60%;
+    background: #fff;
+    opacity: 0.6;
+}
+
+.section h3 {
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .section5 {
@@ -90,7 +126,7 @@ main {
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
-    padding:20px;
+    padding: 20px;
     border: 2px solid #D6F156;
     border-radius: 20px;
 }
@@ -110,7 +146,7 @@ main {
     text-transform: uppercase;
     font-size: 12px;
     padding-block: 10px;
-    width:30%;
+    width: 30%;
 }
 
 .section5 hr {
@@ -134,9 +170,10 @@ main {
     width: 40%;
     line-height: 16px;
 }
-.section5 .barcode-img{
-    width:100%;
-    height:50px;
+
+.section5 .barcode-img {
+    width: 100%;
+    height: 50px;
     object-fit: cover;
     object-position: center;
 }
