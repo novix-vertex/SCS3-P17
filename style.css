@@ -86,7 +86,7 @@ main {
     align-items: center;
     padding: 20px;
     border-radius: 20px;
-    gap:20px;
+    gap: 20px;
 }
 
 .section4 div {
@@ -186,8 +186,6 @@ main {
     padding: 2px;
     border-radius: 10px;
 }
-
-
 
 .section6 {
     grid-area: location;
@@ -316,4 +314,60 @@ main {
     color: #000;
     grid-area: ratings;
     background-color: #FEFEFE;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.section10 .left,
+.section10 .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section10 .left {
+    align-items: flex-start;
+    width:60%;
+}
+
+.section10 .right {
+    align-items: flex-end;
+    width:40%;
+}
+
+.section10 .left h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.section10 .left h5 {
+    font-size: 12px;
+    font-weight: 200;
+    color: #000;
+}
+
+.section10 button {
+    background: linear-gradient(to right, #A759F5, #783CCD);
+    color: #fff;
+    text-transform: uppercase;
+
+    border-radius: 10px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    border:none;
+    font-size: 12px;
+}
+
+.section10 .right i {
+    color: #D6F156;
+    font-size: 16px;
+}
+
+.section .right h2 {
+    font-size: 50px;
 }
