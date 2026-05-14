@@ -110,13 +110,15 @@ main {
     background-color: #D6F156;
     border-radius: 50%;
     padding: 5px;
+    color: #000;
 }
 
 .section h2 {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
-    width:50%;
+    width: 50%;
+    opacity: 0.8;
 }
 
 .section6 h4 {
@@ -146,7 +148,51 @@ main {
 
 .section8 {
     grid-area: qrcode;
-    background-color: #080808;
+    background-color: #D6F156;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.section8 img {
+    height: 100px;
+    width: 100px;
+    aspect-ratio: 1/1;
+}
+
+.section8 i {
+    font-size: 20px;
+    color: #000;
+    opacity: 0.8;
+    padding-top:20px;
+}
+
+.section8 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width:40%;
+    padding-top:20px;
+}
+
+.section8 .content h3 {
+    color: #000;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.section8 .content h4 {
+    color: #000;
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .section9 {
