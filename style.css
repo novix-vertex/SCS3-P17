@@ -10,21 +10,30 @@ body {
     width: 100%;
     height: 100%;
     color: #fff;
+    overflow: hidden;
 }
 
 main {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: #000000;
-    padding: 20px;
     display: grid;
     gap: 10px;
+
+    grid-template-columns: 20% 30% 20% 30%;
+    grid-template-rows: 13% 23% 23% 13% 18%;
+
     grid-template-areas:
         "img1logo img1logo list smiley"
         "img1logo img1logo list img2"
         "barcode location list img2"
         "barcode medals ratings ratings"
         "barcode qrcode ratings ratings";
+}
+
+.section {
+    min-width: 0;
+    min-height: 0;
 }
 
 .section1 {
@@ -40,14 +49,11 @@ main {
 .section1 .person,
 .section1 .logo {
     object-fit: contain;
-    margin: auto;
-    padding: 20px;
     border-radius: 10px;
 }
 
 .section1 .person {
     background-color: #9E54F4;
-
 }
 
 .section1 .logo {
@@ -163,7 +169,6 @@ main {
     background: #171719;
     opacity: 0.2;
     width: 80%;
-    margin-block: 10px;
 }
 
 .section5 .content {
@@ -174,7 +179,7 @@ main {
     padding-block: 10px;
 }
 
-.section .content h4 {
+.section5 .content h4 {
     font-size: 12px;
     font-weight: 400;
     width: 40%;
@@ -207,7 +212,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
+    gap: 15px;
 }
 
 .section6 .address {
@@ -226,10 +231,11 @@ main {
 
 .section6 h2 {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
-    width: 50%;
+    width: 70%;
     opacity: 0.8;
+    font-weight: 500;
 }
 
 .section6 h4 {
@@ -254,14 +260,14 @@ main {
 }
 
 .section7 img {
-    height: 80px;
+    height: 100px;
 }
 
 .section8 {
     grid-area: qrcode;
     background-color: #D6F156;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
@@ -287,7 +293,6 @@ main {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 10px;
-    width: 40%;
     padding-top: 20px;
 }
 
@@ -309,7 +314,6 @@ main {
 .section9 {
     grid-area: img2;
     background-color: #D6F156;
-    margin: 12px;
     border-radius: 10px;
 }
 
@@ -378,6 +382,6 @@ main {
     font-size: 16px;
 }
 
-.section .right h2 {
+.section10 .right h2 {
     font-size: 50px;
 }
