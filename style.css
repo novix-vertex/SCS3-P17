@@ -114,26 +114,28 @@ main {
     align-items: center;
     justify-content: space-between;
 }
-.section3 ul li .circle{
-    height:20px;
-    width:20px;
+
+.section3 ul li .circle {
+    height: 20px;
+    width: 20px;
     background-color: #A759F5;
     border: none;
     border-radius: 50%;
-    display:none;
+    display: none;
 }
 
 .section3 ul li:hover i {
     color: #D6F156;
 }
+
 .section3 ul li:hover {
     background-color: #666;
-    padding:10px;
+    padding: 10px;
     border-radius: 25px;
 }
 
 .section3 ul li:hover .circle {
-    display:block;
+    display: block;
 }
 
 .section3 hr {
@@ -307,6 +309,12 @@ main {
     border-radius: 20px;
 }
 
+.section7 img {
+    max-width: 100%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
 .section8 {
     grid-area: qrcode;
     background-color: #D6F156;
@@ -356,11 +364,7 @@ main {
     object-fit: contain;
 }
 
-.section7 img {
-    max-width: 70%;
-    max-height: 70%;
-    object-fit: contain;
-}
+
 
 .section9 {
     grid-area: img2;
